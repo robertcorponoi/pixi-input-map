@@ -12,7 +12,7 @@
         ".": {
             "import": {
                 "types": "./dist/index.d.ts",
-                "default": "./dist/js.js"
+                "default": "./dist/index.js"
             }
         }
     },
