@@ -1,19 +1,16 @@
-<div align="center">
-
 # **Pixi Input Map**
 
-Pixi Input Map is used to manage input actions which are named events tied to
-a key or mouse button.
+Pixi Input Map is used to associate named actions with keyboard keys or mouse 
+buttons. These actions, keys, and buttons can be checked if they're being 
+used and they can also be simulated.
 
-</div>
-
-**Note:** This library is in beta and currently doesn't require
-[Pixi](https://github.com/pixijs/pixijs) and has other limitations which are
-in progress. Please read the [What's Next](#whats-next) section to learn more.
+**Note:** Despite the name, this library doesn't require
+[Pixi](https://github.com/pixijs/pixijs).
 
 -   [Install](#install)
 -   [Usage](#usage)
     -   [Importing](#importing)
+    -   [Creating the Instance](#creating-the-instance)
     -   [Starting the Listeners](#starting-the-listeners)
     -   [Using Actions](#using-actions)
     -   [Manually Triggering and Releasing Actions](#manually-triggering-and-releasing-actions)
@@ -45,10 +42,22 @@ keyboard and mouse.
 
 ### **Importing**
 
-To import it, use:
+There's currently one export, a class named `PixiInputMap`. You can import it 
+like so:
 
 ```ts
-import pixiInputMap from "pixi-input-map";
+import { PixiInputMap } from "pixi-input-map";
+```
+
+### **Creating the Instance**
+
+You should only ever have one instance of `PixiInputMap` created because 
+otherwise, you'll set up multiple keyboard and mouse listeners that might 
+conflict with each other. So before using it, you should create the instance 
+in a place that can be imported into wherever you need it in your app.
+
+```ts
+export const inputMap = new PixiInputMap();
 ```
 
 ### **Starting the Listeners**

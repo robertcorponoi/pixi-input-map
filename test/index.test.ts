@@ -1,9 +1,11 @@
 import userEvent from "@testing-library/user-event";
 
-import pixiInputMap from "../src/index";
+import { PixiInputMap } from "../src/index";
 
 /** Sets up the `@testing-library/user-event` keyboard and mouse events. */
 const user = userEvent.setup();
+
+let pixiInputMap = new PixiInputMap();
 
 /** Before each test is run we start listening for keyboard and mouse events. */
 beforeEach(() => {
