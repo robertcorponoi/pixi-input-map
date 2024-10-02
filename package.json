@@ -1,6 +1,6 @@
 {
     "name": "pixi-input-map",
-    "version": "0.1.1",
+    "version": "1.0.0",
     "description": "Pixi Input Map is used to manage input actions which are named events tied to a key or mouse button.",
     "author": "Robert Corponoi",
     "license": "MIT",
