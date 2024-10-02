@@ -1,4 +1,4 @@
-class PixiInputMap {
+export class PixiInputMap {
     /** Used to keep track of what keys or mouse buttons are currently pressed. */
     keys: { [key: string]: boolean } = {};
 
@@ -302,5 +302,3 @@ class PixiInputMap {
         return Object.values(this.keys).some((key) => key === true);
     };
 }
-
-export default new PixiInputMap();
