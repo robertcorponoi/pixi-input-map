@@ -32,19 +32,19 @@
         "LICENSE"
     ],
     "devDependencies": {
-        "@rollup/plugin-typescript": "^11.0.0",
-        "@testing-library/dom": "^9.2.0",
+        "@rollup/plugin-typescript": "^12.1.0",
+        "@testing-library/dom": "^10.4.0",
         "@testing-library/user-event": "^14.4.3",
         "@types/jest": "^29.5.0",
-        "@typescript-eslint/eslint-plugin": "^5.13.0",
-        "@typescript-eslint/parser": "^5.17.0",
-        "eslint": "^8.12.0",
+        "@typescript-eslint/eslint-plugin": "^8.8.0",
+        "@typescript-eslint/parser": "^8.8.0",
+        "eslint": "^9.11.1",
         "jest": "^29.5.0",
         "jest-environment-jsdom": "^29.5.0",
-        "pixi.js": "^7.2.1",
+        "pixi.js": "^8.4.1",
         "pixi.js-legacy": "^7.2.3",
-        "prettier": "^2.6.1",
-        "rollup": "^3.20.0",
+        "prettier": "^3.3.3",
+        "rollup": "^4.23.0",
         "ts-jest": "^29.0.5",
         "typescript": "^5.0.2"
     }
